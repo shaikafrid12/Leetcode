@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Solution {
+public class Main {
     public String processStr(String s) {
         StringBuilder result = new StringBuilder();
 
@@ -25,7 +25,7 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextLine()) {
             String s = sc.nextLine();
-            Solution sol = new Solution();
+            Main sol = new Main();
             System.out.println(sol.processStr(s));
         }
         sc.close();
