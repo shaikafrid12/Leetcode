@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(numSubstrings(s));
+        sc.close();
+    }
+
+    public static int numSubstrings(String s) {
+        int res = 0;
+        int[] p = { -1, -1, -1 };
+        for (int i = 0; i < s.length(); i++) {
+            p[s.charAt(i) - 'a'] = i;
+            res += Math.min(p[0], Math.min(p[1], p[2])) + 1;
+        }
+        return res;
+    }
+}
