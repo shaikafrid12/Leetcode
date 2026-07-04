@@ -1,5 +1,6 @@
 import java.util.*;
 class Solution {
+    int ans = Integer.MAX_VALUE;
 
     public int minScore(int n, int[][] roads) {
 
@@ -19,29 +20,28 @@ class Solution {
         }
 
         boolean[] visited = new boolean[n + 1];
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(1);
-        visited[1] = true;
 
-        int ans = Integer.MAX_VALUE;
-
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-
-            for (int[] edge : graph.get(node)) {
-                int next = edge[0];
-                int weight = edge[1];
-
-                ans = Math.min(ans, weight);
-
-                if (!visited[next]) {
-                    visited[next] = true;
-                    queue.offer(next);
-                }
-            }
-        }
+        dfs(1, graph, visited);
 
         return ans;
+    }
+
+    private void dfs(int node, List<List<int[]>> graph, boolean[] visited) {
+
+        visited[node] = true;
+
+        for (int[] edge : graph.get(node)) {
+
+            int next = edge[0];
+            int weight = edge[1];
+
+            // Update minimum edge seen so far
+            ans = Math.min(ans, weight);
+
+            if (!visited[next]) {
+                dfs(next, graph, visited);
+            }
+        }
     }
 
     public static void main(String args[]){
