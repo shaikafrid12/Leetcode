@@ -36,18 +36,17 @@ It can be shown that no other path has less score.
 
 1. **Build Adjacency List (Graph Construction):**
    * Construct an undirected graph using an adjacency list where each node points to a list of its neighbors and the respective road weights.
-2. **Breadth-First Search (BFS) Initialization:**
+2. **Depth-First Search (DFS) Initialization:**
    * Since there is at least one path between city `1` and city `n`, they belong to the same connected component.
    * To find the minimum score of any path between `1` and `n` (allowing visiting roads/cities multiple times), we only need to find the minimum road weight in the connected component containing city `1`.
    * Initialize a `visited` boolean array of size `n + 1` to track visited cities.
-   * Initialize a `queue` for BFS, starting with city `1`. Mark city `1` as visited.
-   * Initialize `ans = Integer.MAX_VALUE` to keep track of the minimum road weight seen.
-3. **Traverse the Connected Component:**
-   * While the `queue` is not empty, dequeue the current city.
+   * Initialize `ans = Integer.MAX_VALUE` as a class-level variable to keep track of the minimum road weight seen.
+   * Call the recursive `dfs` starting from city `1`.
+3. **Recursive DFS Traversal:**
+   * Mark the current city as visited.
    * Iterate through all roads connected to the current city:
      * Update `ans` with the minimum of `ans` and the road's weight.
      * If the neighbor city has not been visited yet:
-       * Mark it as visited.
-       * Enqueue the neighbor city.
+       * Recursively call `dfs` on the neighbor city.
 4. **Return Results:**
    * Return the minimum road weight `ans`.
