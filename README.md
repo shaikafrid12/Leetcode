@@ -1,9 +1,9 @@
-# Leetcode
+# LeetCode
 
 This repository contains my solutions to various LeetCode problems.
 
 ## Daily Challenges
 
-I actively participate in the **LeetCode Daily Coding Challenge**. This helps me maintain a consistent coding habit and learn new algorithms and data structures. 
+I actively participate in the **LeetCode Daily Coding Challenge**. This helps me maintain a consistent coding habit and learn new algorithms and data structures.
 
 The solutions for the daily challenges are documented and organized within this repository, with detailed explanations for my approaches.
