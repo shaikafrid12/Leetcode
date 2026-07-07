@@ -4,6 +4,7 @@
         "3614. Process String with Special Operations II",
         "3612. Process String with Special Operations I",
         "2553. Separate the Digits in an Array",
+        "2492. Minimum Score of a Path Between Two Cities",
         "1967. Number of Strings That Appear as Substrings in Word",
         "1846. Maximum Element After Decreasing and Rearranging",
         "1833. Maximum Ice Cream Bars",
@@ -12,6 +13,6 @@
         "1358. Number of Substrings Containing All Three Characters",
         "1344. Angle Between Hands of a Clock",
         "1189. Maximum Number of Balloons",
-        "2492. Minimum Score of a Path Between Two Cities"
+        "3754. Concatenate Non-Zero Digits and Multiply by Sum I"
     ]
 }
