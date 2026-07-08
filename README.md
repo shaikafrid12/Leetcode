@@ -18,4 +18,16 @@ The solutions for the daily challenges are documented and organized within this 
 |  |
 | ------- |
 | [0136-single-number](https://github.com/shaikafrid12/Leetcode/tree/master/0136-single-number) |
+## Math
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/shaikafrid12/Leetcode/tree/master/0412-fizz-buzz) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/shaikafrid12/Leetcode/tree/master/0412-fizz-buzz) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/shaikafrid12/Leetcode/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
