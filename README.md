@@ -21,6 +21,7 @@ The solutions for the daily challenges are documented and organized within this 
 ## Math
 |  |
 | ------- |
+| [0319-bulb-switcher](https://github.com/shaikafrid12/Leetcode/tree/master/0319-bulb-switcher) |
 | [0412-fizz-buzz](https://github.com/shaikafrid12/Leetcode/tree/master/0412-fizz-buzz) |
 ## String
 |  |
@@ -30,4 +31,8 @@ The solutions for the daily challenges are documented and organized within this 
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/shaikafrid12/Leetcode/tree/master/0412-fizz-buzz) |
+## Brainteaser
+|  |
+| ------- |
+| [0319-bulb-switcher](https://github.com/shaikafrid12/Leetcode/tree/master/0319-bulb-switcher) |
 <!---LeetCode Topics End-->
