@@ -18,9 +18,8 @@ class Solution {
             count++;
             temp=temp.next;
         }
-        count=count/2;
         temp=head;
-        for(int i=0;i<count-1;i++){
+        for(int i=0;i<count/2-1;i++){
             temp=temp.next;
         }
 
